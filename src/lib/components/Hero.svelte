@@ -39,7 +39,7 @@
 								<button
 									type="submit"
 									class="block w-full py-3 px-4 rounded-md shadow text-white font-medium bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 bg-origin-border border border-transparent focus:outline-none focus:ring-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900"
-									>Start free trial</button
+									>Start learning</button
 								>
 							</div>
 						</div>
