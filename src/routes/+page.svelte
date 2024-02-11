@@ -3,6 +3,7 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import LogoCloud from '$lib/components/LogoCloud.svelte';
 	import Metrics from '$lib/components/Metrics.svelte';
+	import StartHere from '$lib/components/StartHere.svelte';
 	import Testimonial from '$lib/components/Testimonial.svelte';
 </script>
 
@@ -12,4 +13,5 @@
 	<Features />
 	<Metrics />
 	<Testimonial />
+	<StartHere />
 </main>
