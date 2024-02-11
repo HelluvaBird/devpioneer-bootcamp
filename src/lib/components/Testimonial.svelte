@@ -34,7 +34,7 @@
 				</div>
 				<blockquote class="mt-6 text-white">
 					<p class="text-xl font-medium sm:text-2xl">
-						Yeah, I think we did hire one of those technology pioneers to work here.
+						"Yeah, I think we did hire one of those technology pioneers to work here."
 					</p>
 					<footer class="mt-6">
 						<p class="flex flex-col font-medium">

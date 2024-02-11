@@ -32,13 +32,13 @@
 									id="email"
 									type="email"
 									placeholder="Enter your email"
-									class="block w-full px-4 py-3 rounded-md border border-transparent text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900"
+									class="block w-full px-4 py-3 rounded-md border border-transparent text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent"
 								/>
 							</div>
 							<div class="mt-3 sm:mt-0 sm:ml-3">
 								<button
 									type="submit"
-									class="block w-full py-3 px-4 rounded-md shadow text-white font-medium bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 bg-origin-border border border-transparent focus:outline-none focus:ring-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900"
+									class="block w-full py-3 px-4 rounded-md shadow text-white font-medium bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 bg-origin-border border border-transparent focus:outline-none focus:ring-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent"
 									>Start learning</button
 								>
 							</div>
