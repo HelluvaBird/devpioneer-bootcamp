@@ -1,6 +1,6 @@
 <div class="bg-white">
 	<div class="bg-indigo-700">
-		<div class="max-w-2xl mx-auto py-16 sm:py-24 px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+		<div class="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
 			<div class="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
 				<div class="max-w-xl">
 					<h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
