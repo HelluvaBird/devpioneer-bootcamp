@@ -570,7 +570,7 @@
 						<span class="text-4xl font-extrabold text-gray-900">$22,000</span>
 					</p>
 					<p class="mt-4 text-sm text-gray-500">
-						For brave pioneers looking for an intense and immervise experience.
+						For brave pioneers looking for an intense and immersive experience.
 					</p>
 					<a
 						href="#"
@@ -887,7 +887,7 @@
 										<span class="text-4xl font-extrabold text-gray-900">$22,000</span>
 									</p>
 									<p class="mt-4 text-sm text-gray-500">
-										For brave pioneers looking for an intense and immervise experience.
+										For brave pioneers looking for an intense and immersive experience.
 									</p>
 								</div>
 								<a
