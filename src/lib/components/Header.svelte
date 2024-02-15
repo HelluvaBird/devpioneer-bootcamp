@@ -1,5 +1,15 @@
 <script lang="ts">
+	let programsMenuOpen = false;
+	let menuContainer: HTMLDivElement;
+
+	function onWindowClick(e: MouseEvent) {
+		if (!menuContainer.contains(e.target as Node)) {
+			programsMenuOpen = false;
+		}
+	}
 </script>
+
+<svelte:window on:click={onWindowClick} />
 
 <header class="bg-white">
 	<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +23,47 @@
 					<a href="/admissions" class="text-base font-medium text-gray-400 hover:text-gray-900"
 						>Admissions</a
 					>
-					<a href="#" class="text-base font-medium text-gray-400 hover:text-gray-900">Docs</a>
+					<div class="relative inline" bind:this={menuContainer}>
+						<button
+							on:click={() => (programsMenuOpen = !programsMenuOpen)}
+							type="button"
+							class="group inline-flex items-center text-base font-medium bg-white appearance-none border border-transparent rounded-sm text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+						>
+							<span>Programs</span>
+							<svg
+								class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-900"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</button>
+						{#if programsMenuOpen}
+							<div
+								class="absolute z-10 w-screen max-w-md top-10 left-1/2 transform -translate-x-1/2"
+							>
+								<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-10 overflow-hidden">
+									<div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+										<a href="#" class="p-3 flex items-start rounded-lg hover:bg-gray-50">
+											<p class="text-base font-medium text-gray-900">Full-time Program</p>
+										</a>
+										<a href="#" class="p-3 flex items-start rounded-lg hover:bg-gray-50">
+											<p class="text-base font-medium text-gray-900">Part-time Program</p>
+										</a>
+										<a href="#" class="p-3 flex items-start rounded-lg hover:bg-gray-50">
+											<p class="text-base font-medium text-gray-900">Online Program</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						{/if}
+					</div>
 					<a href="#" class="text-base font-medium text-gray-400 hover:text-gray-900">Support</a>
 				</div>
 			</div>
