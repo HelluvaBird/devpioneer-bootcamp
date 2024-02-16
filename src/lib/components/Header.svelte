@@ -3,9 +3,21 @@
 	let menuContainer: HTMLDivElement;
 
 	function onWindowClick(e: MouseEvent) {
-		if (!menuContainer.contains(e.target as Node)) {
+		if (!programsMenuOpen) return;
+		if (e.target instanceof HTMLElement && !menuContainer.contains(e.target)) {
 			programsMenuOpen = false;
 		}
+	}
+
+	function onMenuBlur(e: FocusEvent) {
+		requestAnimationFrame(() => {
+			if (
+				e.relatedTarget instanceof HTMLElement &&
+				!menuContainer.contains(document.activeElement)
+			) {
+				programsMenuOpen = false;
+			}
+		});
 	}
 </script>
 
@@ -23,7 +35,7 @@
 					<a href="/admissions" class="text-base font-medium text-gray-400 hover:text-gray-900"
 						>Admissions</a
 					>
-					<div class="relative inline" bind:this={menuContainer}>
+					<div class="relative inline" bind:this={menuContainer} on:focusout={onMenuBlur}>
 						<button
 							on:click={() => (programsMenuOpen = !programsMenuOpen)}
 							type="button"
