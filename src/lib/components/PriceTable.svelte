@@ -7,7 +7,7 @@
 						Tuition Costs
 					</h2>
 					<p class="mt-5 text-xl text-indigo-200">
-						Start blazing your tech trail with an immersive learning experience.
+						Start blazing your tech trail with one of our immersive learning experience.
 					</p>
 				</div>
 				<div class="mt-10 w-full max-w-xs lg:mt-0">

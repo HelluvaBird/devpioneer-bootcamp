@@ -1,4 +1,5 @@
-<script lang="ts"></script>
+<script lang="ts">
+</script>
 
 <div class="py-24 sm:py-32 bg-gradient-to-r from-purple-800 to-indigo-700">
 	<div class="max-w-md sm:max-w-lg lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

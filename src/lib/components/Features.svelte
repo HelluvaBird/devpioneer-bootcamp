@@ -100,7 +100,7 @@
 				learning preferences. You even get a fancy diploma at the end too.
 			</p>
 			<p>
-				Super affordable. It <a href="#">costs</a> like almost nothing to enroll. DevPioneer Institute
+				Super affordable. It <a href="/price">costs</a> like almost nothing to enroll. DevPioneer Institute
 				also offers career services and support, such as resume reviews, interview preparation, and networking
 				opportunities. This can be valuable for individuals looking to transition into a career in tech.
 			</p>

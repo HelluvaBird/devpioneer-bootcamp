@@ -32,7 +32,9 @@
 								<a href="/price" class="text-base text-gray-500 hover:text-gray-900">Pricing</a>
 							</li>
 							<li>
-								<a href="#" class="text-base text-gray-500 hover:text-gray-900">Documentation</a>
+								<a href="/admissions" class="text-base text-gray-500 hover:text-gray-900"
+									>Admissions</a
+								>
 							</li>
 							<li>
 								<a href="#" class="text-base text-gray-500 hover:text-gray-900">Guides</a>

@@ -31,11 +31,12 @@
 			<div class="flex items-center">
 				<a href="/" class="text-base font-semibold">DevPioneer Institute</a>
 				<div class="hidden ml-10 space-x-8 lg:block">
-					<a href="/price" class="text-base font-medium text-gray-400 hover:text-gray-900">Price</a>
-					<a href="/admissions" class="text-base font-medium text-gray-400 hover:text-gray-900"
-						>Admissions</a
+					<div
+						role="navigation"
+						class="relative inline"
+						bind:this={menuContainer}
+						on:focusout={onMenuBlur}
 					>
-					<div class="relative inline" bind:this={menuContainer} on:focusout={onMenuBlur}>
 						<button
 							on:click={() => (programsMenuOpen = !programsMenuOpen)}
 							type="button"
@@ -62,20 +63,42 @@
 							>
 								<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-10 overflow-hidden">
 									<div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-										<a href="#" class="p-3 flex items-start rounded-lg hover:bg-gray-50">
+										<a
+											href="/programs/full-time"
+											class="p-3 flex flex-col items-start rounded-lg hover:bg-gray-50"
+										>
 											<p class="text-base font-medium text-gray-900">Full-time Program</p>
+											<p class="text-gray-500 text-sm mt-1">
+												For brave pioneers looking for an intense and immersive experience.
+											</p>
 										</a>
-										<a href="#" class="p-3 flex items-start rounded-lg hover:bg-gray-50">
+										<a
+											href="/programs/part-time"
+											class="p-3 flex flex-col items-start rounded-lg hover:bg-gray-50"
+										>
 											<p class="text-base font-medium text-gray-900">Part-time Program</p>
+											<p class="text-gray-500 text-sm mt-1">
+												For busy pioneers or for those looking to make a career change into tech.
+											</p>
 										</a>
-										<a href="#" class="p-3 flex items-start rounded-lg hover:bg-gray-50">
+										<a
+											href="/programs/online"
+											class="p-3 flex flex-col items-start rounded-lg hover:bg-gray-50"
+										>
 											<p class="text-base font-medium text-gray-900">Online Program</p>
+											<p class="text-gray-500 text-sm mt-1">
+												Blaze your trail with our top rated online cirriculum.
+											</p>
 										</a>
 									</div>
 								</div>
 							</div>
 						{/if}
 					</div>
+					<a href="/price" class="text-base font-medium text-gray-400 hover:text-gray-900">Price</a>
+					<a href="/admissions" class="text-base font-medium text-gray-400 hover:text-gray-900"
+						>Admissions</a
+					>
 					<a href="#" class="text-base font-medium text-gray-400 hover:text-gray-900">Support</a>
 				</div>
 			</div>
@@ -93,7 +116,6 @@
 			<a href="/admissions" class="text-base font-medium text-gray-400 hover:text-gray-900"
 				>Admissions</a
 			>
-			<a href="#" class="text-base font-medium text-gray-400 hover:text-gray-900">Docs</a>
 			<a href="#" class="text-base font-medium text-gray-400 hover:text-gray-900">Support</a>
 		</div>
 	</nav>

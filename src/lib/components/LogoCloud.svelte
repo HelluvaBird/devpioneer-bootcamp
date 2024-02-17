@@ -28,7 +28,7 @@
 							d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z"
 						/>
 					</svg>
-					<span class="text-xl">FireCorp.</span>
+					<span class="text-xl pointer-events-none select-none">FireCorp.</span>
 				</div>
 			</div>
 			<div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
@@ -48,12 +48,12 @@
 						/>
 					</svg>
 
-					<span class="text-xl uppercase underline">Launch</span>
+					<span class="text-xl pointer-events-none select-none uppercase underline">Launch</span>
 				</div>
 			</div>
 			<div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
 				<div class="flex items-center h-12 text-gray-400">
-					<span class="text-xl">We Fix Stuff</span>
+					<span class="text-xl pointer-events-none select-none">We Fix Stuff</span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -92,7 +92,7 @@
 						/>
 					</svg>
 
-					<span class="text-xl">ScanThis</span>
+					<span class="text-xl pointer-events-none select-none">ScanThis</span>
 				</div>
 			</div>
 			<div class="col-span-1 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
@@ -112,7 +112,7 @@
 						/>
 					</svg>
 
-					<span class="text-xl">Twilight</span>
+					<span class="text-xl pointer-events-none select-none">Twilight</span>
 				</div>
 			</div>
 		</div>
