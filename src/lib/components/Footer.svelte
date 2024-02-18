@@ -9,19 +9,22 @@
 			<div class="grid grid-cols-2 gap-8 xl:col-span-2">
 				<div class="md:grid md:grid-cols-2 md:gap-8">
 					<div>
-						<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+						<h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Programs</h3>
 						<ul role="list" class="mt-4 space-y-4">
 							<li>
-								<a href="#" class="text-base text-gray-500 hover:text-gray-900">Marketing</a>
+								<a href="/programs/full-time" class="text-base text-gray-500 hover:text-gray-900"
+									>Full-time</a
+								>
 							</li>
 							<li>
-								<a href="#" class="text-base text-gray-500 hover:text-gray-900">Analytics</a>
+								<a href="/programs/part-time" class="text-base text-gray-500 hover:text-gray-900"
+									>Part-time</a
+								>
 							</li>
 							<li>
-								<a href="#" class="text-base text-gray-500 hover:text-gray-900">Commerce</a>
-							</li>
-							<li>
-								<a href="#" class="text-base text-gray-500 hover:text-gray-900">Insights</a>
+								<a href="/programs/online" class="text-base text-gray-500 hover:text-gray-900"
+									>Online</a
+								>
 							</li>
 						</ul>
 					</div>
