@@ -31,8 +31,30 @@
 				'Unit concludes with a wrap-up project to showcase your skills'
 			]
 		},
-		{ title: 'Front-end Development', description: '', curriculum: [], features: [] },
-		{ title: 'Back-end Development', description: '', curriculum: [], features: [] },
+		{
+			title: 'Front-end Development',
+			description:
+				'The Front-end Development unit builds upon the Foundations unit. Diving deeper into CSS and JavaScript. We will also get our hands on the popular front-end JavaScript library React. Near the end of the unit pioneers will showcase their front-end skills by building a portfolio web site.',
+			curriculum: ['CSS', 'JavaScript', 'React'],
+			features: [
+				"You'll learn how content and imagery are best displayed on a web site",
+				'Hands on the popular JavaScript library React',
+				'Working with your fellow pioneers to best optimize your code',
+				'Work on a portfolio web site to showcase what you have learned so far'
+			]
+		},
+		{
+			title: 'Back-end Development',
+			description:
+				'The Back-end Development unit will teach how to work with JavaScript on the server by using the JavaScript runtime environment NodeJS. We will also be learning how to communicate with Application Programming Interfaces (APIs) to retrieve vasts amount of data. Finally learning how to store our data in NoSQL and SQL databases.',
+			curriculum: ['NodeJS - JavaScript on the back-end', 'APIs', 'MongoDB', 'PostgreSQL'],
+			features: [
+				'Learn how to plan, research, and build web applications',
+				'Help your fellow pioneers with interview preparation and learn how to succeed during an interview',
+				'Structure databases appropriately and efficiently',
+				'Build a social media web site and develope an E-Commerce platform'
+			]
+		},
 		{ title: 'Full Stack Development', description: '', curriculum: [], features: [] }
 	];
 </script>
