@@ -55,7 +55,19 @@
 				'Build a social media web site and develope an E-Commerce platform'
 			]
 		},
-		{ title: 'Full Stack Development', description: '', curriculum: [], features: [] }
+		{
+			title: 'Full Stack Development',
+			description:
+				"The final unit will cover full stack development with the popular React framework NextJS. We will learn the difference between server-rendered and client-rendered components and learn how to use them effectively together. You'll put all your skills to the test when you develope your own SaaS (Software as a Service) web applications as your final project.",
+			curriculum: ['React', 'NextJS', 'MongoDB', 'PostgreSQL'],
+			features: [
+				'Create full stack web applications with NextJS',
+				'Demonstrate your front-end and back-end skills',
+				'Meet with DevPioneer Institute Career services to begin the search for your new career',
+				'Polish your GitHub and LinkedIn profiles to help establish your professional experience',
+				'Work with your fellow pioneers on a Full Stack SaaS application'
+			]
+		}
 	];
 </script>
 
@@ -128,17 +140,16 @@
 						</aside>
 					</div>
 					<div class="col-span-12 lg:col-span-8 lg:col-start-5">
-						<div class="max-w-3xl">
-							<h2 class="text-3xl sm:text-4xl font-extrabold text-indigo-700">
-								The DevPioneer Institute Experience
-							</h2>
-							<p class="text-base mt-6">
-								DevPioneer Institutes full-time program is an immersive and rigorous 15 week
-								hands-on course. For those brave pioneers seeking a rewarding career quickly.
-							</p>
-						</div>
-						<div class="mt-6 pb-12 sm:pb-24 max-w-3xl">
-							<p class="text-xl sm:text-2xl font-extrabold text-gray-900">
+						<h2 class="max-w-3xl text-3xl sm:text-4xl font-extrabold text-indigo-700">
+							The DevPioneer Institute Experience
+						</h2>
+						<p class="max-w-3xl text-base mt-6">
+							DevPioneer Institutes full-time program is an immersive and rigorous 15 week hands-on
+							course. For those brave pioneers seeking a rewarding career quickly.
+						</p>
+
+						<div class="mt-6 pb-12 sm:pb-24">
+							<p class="max-w-3xl text-xl sm:text-2xl font-extrabold text-gray-900">
 								The Full-time program highlights
 							</p>
 							<div class="mt-6 grid grid-cols-2 gap-6 items-start">
@@ -277,17 +288,18 @@
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
-							<div class="max-w-3xl space-y-6">
-								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">
+							<div class="space-y-6">
+								<h2 class="max-w-3xl text-3xl sm:text-4xl text-indigo-700 font-extrabold">
 									Blaze your trail
 								</h2>
-								<p class="text-base">
+								<p class="max-w-3xl text-base">
 									These are the in demand technologies you will learn on your journey.
 								</p>
-								<p class="text-base">
+								<p class="max-w-3xl text-base">
 									Classes are held <span class="font-bold">every weekday</span>, Monday through
 									Friday, from 10:00am - 5:00pm
 								</p>
+
 								<div class="border border-gray-200 rounded-md shadow-sm">
 									<div class="sm:hidden p-2">
 										<label for="tabs" class="sr-only">Select a tab</label>
@@ -413,12 +425,15 @@
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
-							<div class="max-w-3xl space-y-6">
-								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Tuition</h2>
-								<p>
+							<div class="space-y-6">
+								<h2 class="max-w-3xl text-3xl sm:text-4xl text-indigo-700 font-extrabold">
+									Tuition
+								</h2>
+								<p class="max-w-3xl">
 									At DevPioneer Institute we strive to make our education more accessible to our
 									pioneers.
 								</p>
+
 								<div class="bg-white shadow overflow-hidden rounded-md">
 									<ul role="list" class="divide-y divide-gray-200">
 										<div class="px-6 py-4">
@@ -458,11 +473,363 @@
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
-							<div class="max-w-3xl">
-								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">
+							<div class="space-y-6">
+								<h2 class="max-w-3xl text-3xl sm:text-4xl text-indigo-700 font-extrabold">
 									Hands-on Projects
 								</h2>
+								<p class="max-w-3xl text-lg">
+									To showcase your technical, and creative skills to future employers we will be
+									creating web sites and committing them to the online Git repository GitHub. As you
+									conclude each unit a project will be assigned.
+								</p>
+								<p class="max-w-3xl text-lg">
+									These are some of the projects you will be able to work on:
+								</p>
+
+								<article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+									<div class="flex items-start sm:gap-8">
+										<div
+											class="hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500"
+											aria-hidden="true"
+										>
+											<div class="flex items-center gap-1 text-indigo-500">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-8 h-8"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"
+													/>
+												</svg>
+											</div>
+										</div>
+
+										<div>
+											<strong
+												class="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white"
+											>
+												Project #001
+											</strong>
+
+											<h3 class="mt-4 text-lg font-medium sm:text-xl">
+												<a href="#" class="hover:underline"> Your portfolio site </a>
+											</h3>
+
+											<p class="mt-1 text-sm text-gray-700">
+												To showcase the projects you work on to employers. Our first project will be
+												your portfolio site. Portfolio web sites are important to demonstrate
+												fimilarity with a given language and to show you have the skills needed for
+												a role.
+											</p>
+
+											<div class="mt-4 sm:flex sm:items-center sm:gap-2">
+												<div class="flex items-center gap-1 text-gray-500">
+													<svg
+														class="h-4 w-4"
+														fill="none"
+														stroke="currentColor"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															stroke-width="2"
+															d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+														></path>
+													</svg>
+
+													<p class="text-xs font-medium">4 days</p>
+												</div>
+
+												<span class="hidden sm:block" aria-hidden="true">&middot;</span>
+
+												<p class="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
+													Technology:
+													<span class="text-indigo-500">HTML</span>,
+													<span class="text-indigo-500">CSS</span>,
+													<span class="text-indigo-500">JavaScript</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+									<div class="flex items-start sm:gap-8">
+										<div
+											class="hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500"
+											aria-hidden="true"
+										>
+											<div class="flex items-center gap-1 text-indigo-500">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-8 h-8"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5"
+													/>
+												</svg>
+											</div>
+										</div>
+
+										<div>
+											<strong
+												class="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white"
+											>
+												Project #002
+											</strong>
+
+											<h3 class="mt-4 text-lg font-medium sm:text-xl">
+												<a href="#" class="hover:underline"> Social Media Platform </a>
+											</h3>
+
+											<p class="mt-1 text-sm text-gray-700">
+												This project will put your knowledge of the front-end to the test. Social
+												media plays a vital role in the world today. Now more than ever content is
+												being consumed through social media. Creating a platform of your own is the
+												best way to harness that potential.
+											</p>
+
+											<div class="mt-4 sm:flex sm:items-center sm:gap-2">
+												<div class="flex items-center gap-1 text-gray-500">
+													<svg
+														class="h-4 w-4"
+														fill="none"
+														stroke="currentColor"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															stroke-width="2"
+															d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+														></path>
+													</svg>
+
+													<p class="text-xs font-medium">1-2 weeks</p>
+												</div>
+
+												<span class="hidden sm:block" aria-hidden="true">&middot;</span>
+
+												<p class="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
+													Technology:
+													<span class="text-indigo-500">CSS</span>,
+													<span class="text-indigo-500">JavaScript</span>,
+													<span class="text-indigo-500">React</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+									<div class="flex items-start sm:gap-8">
+										<div
+											class="hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500"
+											aria-hidden="true"
+										>
+											<div class="flex items-center gap-1 text-indigo-500">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-8 h-8"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+													/>
+												</svg>
+											</div>
+										</div>
+
+										<div>
+											<strong
+												class="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white"
+											>
+												Project #003
+											</strong>
+
+											<h3 class="mt-4 text-lg font-medium sm:text-xl">
+												<a href="#" class="hover:underline"> E-Commerce Site </a>
+											</h3>
+
+											<p class="mt-1 text-sm text-gray-700">
+												After working with NodeJS and connecting the back-end with a database you
+												will construct an e-commerce site. This will demonstrate your back-end
+												prowess by updating shopping cart components and inventory stocks in a
+												database.
+											</p>
+
+											<div class="mt-4 sm:flex sm:items-center sm:gap-2">
+												<div class="flex items-center gap-1 text-gray-500">
+													<svg
+														class="h-4 w-4"
+														fill="none"
+														stroke="currentColor"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															stroke-width="2"
+															d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+														></path>
+													</svg>
+
+													<p class="text-xs font-medium">2-3 weeks</p>
+												</div>
+
+												<span class="hidden sm:block" aria-hidden="true">&middot;</span>
+
+												<p class="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
+													Technology:
+													<span class="text-indigo-500">NodeJS</span>,
+													<span class="text-indigo-500">MongoDB</span>,
+													<span class="text-indigo-500">PostgreSQL</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+									<div class="flex items-start sm:gap-8">
+										<div
+											class="hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500"
+											aria-hidden="true"
+										>
+											<div class="flex items-center gap-1 text-indigo-500">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-8 h-8"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z"
+													/>
+												</svg>
+											</div>
+										</div>
+
+										<div>
+											<strong
+												class="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white"
+											>
+												Project #004
+											</strong>
+
+											<h3 class="mt-4 text-lg font-medium sm:text-xl">
+												<a href="#" class="hover:underline"> Software as a Service (SaaS) </a>
+											</h3>
+
+											<p class="mt-1 text-sm text-gray-700">
+												a web application that is made available over the internet rather than
+												software installed on your computers. You will develop your very own SaaS
+												and show employers why this software model is beneficial for their
+												companies.
+											</p>
+
+											<div class="mt-4 sm:flex sm:items-center sm:gap-2">
+												<div class="flex items-center gap-1 text-gray-500">
+													<svg
+														class="h-4 w-4"
+														fill="none"
+														stroke="currentColor"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															stroke-width="2"
+															d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+														></path>
+													</svg>
+
+													<p class="text-xs font-medium">2-3 weeks</p>
+												</div>
+
+												<span class="hidden sm:block" aria-hidden="true">&middot;</span>
+
+												<p class="mt-2 text-xs font-medium text-gray-500 sm:mt-0">
+													Technology: <span class="text-indigo-500">React</span>,
+													<span class="text-indigo-500">NextJS</span>,
+													<span class="text-indigo-500">MongoDB</span>,
+													<span class="text-indigo-500">PostgreSQL</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</article>
 							</div>
+						</div>
+						<hr class="border-0 h-px bg-gray-200 my-6" />
+						<div class="py-16">
+							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Daily Schedule</h2>
+						</div>
+						<hr class="border-0 h-px bg-gray-200 my-6" />
+						<div class="py-16">
+							<div class="space-y-6">
+								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">
+									Programming Together
+								</h2>
+								<p class="text-lg">
+									To get you ready for a career in coding. It is vital to work as part of a team.
+									Cooperation is a key skill of any great programmer. At DevPioneer Institute you
+									will be put on a small team of programmers to work on projects together.
+								</p>
+
+								<img
+									class="max-w-full object-cover"
+									src="/images/pairprogram.jpg"
+									alt="A group of successful programmers working together"
+								/>
+								<h3 class="text-2xl font-semibold">
+									Working together provides real-world experience
+								</h3>
+								<p class="text-lg">
+									Employers are always looking for someone with industry experience. By working as
+									part of a team at DevPioneer Institute you prepare yourself to work as part of a
+									team of programmers in real-world environments.
+								</p>
+							</div>
+						</div>
+						<hr class="border-0 h-px bg-gray-200 my-6" />
+						<div class="py-16">
+							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Job Placement</h2>
+						</div>
+						<hr class="border-0 h-px bg-gray-200 my-6" />
+						<div class="py-16">
+							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Admissions</h2>
+						</div>
+						<hr class="border-0 h-px bg-gray-200 my-6" />
+						<div class="py-16">
+							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Testimonials</h2>
+						</div>
+						<hr class="border-0 h-px bg-gray-200 my-6" />
+						<div class="py-16">
+							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">FAQs</h2>
 						</div>
 					</div>
 				</div>
