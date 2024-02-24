@@ -1,4 +1,5 @@
 <script lang="ts">
+	import LogoCloud from '$lib/components/LogoCloud.svelte';
 	import ProgramStats from '$lib/components/ProgramStats.svelte';
 	import ProgramsHeader from '$lib/components/ProgramsHeader.svelte';
 	const program = {
@@ -297,7 +298,7 @@
 								</p>
 								<p class="max-w-3xl text-base">
 									Classes are held <span class="font-bold">every weekday</span>, Monday through
-									Friday, from 10:00am - 5:00pm
+									Friday, from 9:00am - 5:00pm
 								</p>
 
 								<div class="border border-gray-200 rounded-md shadow-sm">
@@ -786,7 +787,104 @@
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
-							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Daily Schedule</h2>
+							<div class="space-y-6">
+								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Daily Schedule</h2>
+								<p class="text-lg">
+									Our Full-time program is an intense and immersive experience. You'll need to be
+									ready to commit at least 8-9 hours per day, 7 days a week. Class is held Monday
+									through Friday from 9am to 5pm
+								</p>
+								<div class="grid grid-cols-12 gap-8">
+									<div class="col-span-12 sm:col-span-6 grid space-y-6">
+										<h3 class="text-xl font-extrabold">Activities</h3>
+										<p class="text-lg">
+											<span class="font-bold">Lecture: </span>Learn from industry experienced
+											instructors everyday. They will walk you through practical and theoretical use
+											cases. Answer any questions you may have.
+										</p>
+										<p class="text-lg">
+											<span class="font-bold">Break/Lunch: </span>Enjoy some downtime. Grab a bite
+											to eat. Get to know your fellow pioneers.
+										</p>
+										<p class="text-lg">
+											<span class="font-bold">Assignments: </span>Solve real-world problems and put
+											the skills you learned in the lecture to the test.
+										</p>
+										<p class="text-lg">
+											<span class="font-bold">Pair Programming: </span>Work along with your fellow
+											pioneers. Gaining valuable industry experience working as part of a team.
+										</p>
+										<p class="text-lg">
+											<span class="font-bold">Review: </span>Go over the core concepts you learned
+											that day. Discussing and collaborating with your fellow pioneers what the key
+											take-aways were.
+										</p>
+									</div>
+									<div class="col-span-12 sm:col-span-6">
+										<div class="shadow-xl shadow-black/20 p-6 h-full rounded">
+											<p class="font-bold text-lg">Your DevPioneer Institute Schedule</p>
+											<div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 mt-6">
+												<div class="flex gap-2 items-center">
+													<div
+														class="size-12 bg-blue-300 border-2 border-dashed border-blue-600 rounded"
+													></div>
+													<span class="text-blue-600 font-semibold tracking-wide leading-4"
+														>Outside of class</span
+													>
+												</div>
+												<div class="flex gap-2 items-center">
+													<div
+														class="size-12 bg-purple-300 border-2 border-dashed border-purple-600 rounded"
+													></div>
+													<span class="text-purple-600 font-semibold tracking-wide">In class</span>
+												</div>
+												<div
+													class="col-span-1 sm:col-span-2 h-24 bg-purple-300 border-2 border-dashed border-purple-600 rounded grid place-items-center"
+												>
+													<p class="font-extrabold text-purple-600 tracking-wide">
+														Lecture (3 hours)
+													</p>
+												</div>
+												<div
+													class="col-span-1 sm:col-span-2 h-12 bg-purple-300 border-2 border-dashed border-purple-600 rounded grid place-items-center"
+												>
+													<p class="font-extrabold text-purple-600 tracking-wide">
+														Break/Lunch (1 hour)
+													</p>
+												</div>
+												<div
+													class="col-span-1 sm:col-span-2 h-12 bg-purple-300 border-2 border-dashed border-purple-600 rounded grid place-items-center"
+												>
+													<p class="font-extrabold text-purple-600 tracking-wide">
+														Assignments (1 hour)
+													</p>
+												</div>
+												<div
+													class="col-span-1 sm:col-span-2 h-20 bg-purple-300 border-2 border-dashed border-purple-600 rounded grid place-items-center"
+												>
+													<p class="font-extrabold text-purple-600 tracking-wide">
+														Pair Programming (2 hour)
+													</p>
+												</div>
+												<div
+													class="col-span-1 sm:col-span-2 h-12 bg-purple-300 border-2 border-dashed border-purple-600 rounded grid place-items-center"
+												>
+													<p class="font-extrabold text-purple-600 tracking-wide">
+														Review (1 hour)
+													</p>
+												</div>
+												<div
+													class="col-span-1 sm:col-span-2 h-12 bg-blue-300 border-2 border-dashed border-blue-600 rounded grid place-items-center"
+												>
+													<p class="font-extrabold text-blue-600 tracking-wide">
+														Homework (1 hour)
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
@@ -817,19 +915,274 @@
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
-							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Job Placement</h2>
+							<div class="space-y-6">
+								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Job Placement</h2>
+								<p>
+									Upon graduation DevPioneer Institute offers job placement services for those who
+									complete the full-time program. DevPioneer Institute provides the guidance and
+									tools you need to blaze your trail and land the ideal web developer role for you.
+								</p>
+								<div class="grid grid-cols-12 gap-x-4 gap-y-8 lg:gap-6 items-start">
+									<div class="col-span-12 lg:col-span-6 grid gap-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122"
+											/>
+										</svg>
+										<p class="font-semibold">Portfolio of Apps</p>
+										<p>
+											Throughout your journey at DevPioneer Institute you will complete projects
+											that can demonstrate to employers your skills.
+										</p>
+									</div>
+									<div class="col-span-12 lg:col-span-6 grid gap-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5"
+											/>
+										</svg>
+										<p class="font-semibold">Social Media Profiles</p>
+										<p>
+											You'll work with our career coaches to complete your LinkedIn and GitHub
+											profiles to start the networking process.
+										</p>
+									</div>
+									<div class="col-span-12 lg:col-span-6 grid gap-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+											/>
+										</svg>
+										<p class="font-semibold">Resume</p>
+										<p>
+											An important aspect of the job hunt is having the perfect resume. You will
+											work with our career coaches to polish your resume and become the perfect
+											candidate for the job.
+										</p>
+									</div>
+									<div class="col-span-12 lg:col-span-6 grid gap-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+											/>
+										</svg>
+										<p class="font-semibold">Job Placement</p>
+										<p>
+											DevPioneer Institute partners with a network of huge tech industry companies.
+											Many of them reach out to DevPioneer Institute to fill vacant positions.
+										</p>
+									</div>
+								</div>
+								<p class="py-12">
+									One on one mentorship opportunities are also offered to those who enroll in the
+									full-time program. Your mentor will help you with your programming skills and
+									prepare you for interviews.
+								</p>
+								<LogoCloud />
+								<p>
+									These are just some of the totally legit companies DevPioneer Institute partners
+									with. Companies in all industries are looking to hire web developers.
+								</p>
+							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
-							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Admissions</h2>
+							<div class="space-y-6">
+								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Admissions</h2>
+								<p>
+									At DevPioneer Institute we want to understand what motivates you. The admissions
+									process encourages you to share what your abilities and goals are so we can best
+									help you on your journey. We want you to succeed with us at DevPioneer Institute.
+								</p>
+								<p>
+									The Full-time program is an intense and immersive journey. It was developed by our
+									top DevPioneer Institute scientists to challenge students throughout the program.
+									Blazing your trail with the Full-time program is an engaging and rewarding
+									experience.
+								</p>
+								<p>Prospective pioneers need to be:</p>
+								<div class="grid grid-cols-12 gap-6 items-start">
+									<div class="grid col-span-12 lg:col-span-4 gap-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="m4.5 12.75 6 6 9-13.5"
+											/>
+										</svg>
+										<p class="font-semibold">Commitment</p>
+										<p>
+											You need to be committed to learning the course material at a rigorous pace.
+										</p>
+									</div>
+									<div class="grid col-span-12 lg:col-span-4 gap-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M9 3.75H6.912a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859M12 3v8.25m0 0-3-3m3 3 3-3"
+											/>
+										</svg>
+										<p class="font-semibold">Dedication</p>
+										<p>You need to be dedicated to completing your assignments.</p>
+									</div>
+									<div class="grid col-span-12 lg:col-span-4 gap-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+											/>
+										</svg>
+										<p class="font-semibold">Growth</p>
+										<p>Always striving to learn more and continuing your technology journey.</p>
+									</div>
+								</div>
+								<div class="pt-6">
+									<a
+										href="/admissions"
+										class="inline-block py-2 px-4 bg-indigo-600 text-white text-base text-center font-medium rounded-md hover:bg-indigo-700/75 tracking-widest uppercase"
+										>Start Your Application</a
+									>
+								</div>
+							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
-							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Testimonials</h2>
+							<div class="space-y-6">
+								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Testimonials</h2>
+								<div class="grid grid-cols-12 gap-x-4 gap-y-8 lg:gap-6">
+									<div
+										class="col-span-12 lg:col-span-6 p-6 border border-gray-200 shadow rounded-lg grid grid-rows-[1fr_auto]"
+									>
+										<p>
+											A word of advice to older prospective students like myself. You may be
+											frustrated where you are right now but afraid to make the leap, to quit your
+											job, to spend your savings on a bootcamp, to take three months to learn, to
+											work 80 hours a week. I promise it's worth it.
+										</p>
+										<div class="mt-6">
+											<p>Andrew Ash</p>
+											<p>Front-end Engineer</p>
+										</div>
+									</div>
+									<div
+										class="col-span-12 lg:col-span-6 p-6 border border-gray-200 shadow rounded-lg grid grid-rows-[1fr_auto]"
+									>
+										<p>
+											DevPioneer Institute is, by all measures, the best investment I have made to
+											date, and I would wholeheartedly recommend it to anybody considering it,
+											especially those with little to no prior programming knowledge. I will note,
+											however, that hard, consistent, and dedicated individual work is a must if you
+											want to make the most out of the DevPioneer Institute investment.
+										</p>
+										<div class="mt-6">
+											<p>Sally Smerna</p>
+											<p>Front-end Engineer</p>
+										</div>
+									</div>
+									<div
+										class="col-span-12 lg:col-span-6 p-6 border border-gray-200 shadow rounded-lg grid grid-rows-[1fr_auto]"
+									>
+										<p>
+											The instructors are always available for one-on-one help and will take the
+											time to guide you through questions and problems. Their level of engagement in
+											each student's learning process is what sets DevPioneer Institute apart.
+										</p>
+										<div class="mt-6">
+											<p>Lisa Miner</p>
+											<p>Front-end Engineer</p>
+										</div>
+									</div>
+									<div
+										class="col-span-12 lg:col-span-6 p-6 border border-gray-200 shadow rounded-lg grid grid-rows-[1fr_auto]"
+									>
+										<p>
+											Within 4 weeks, I received 2 job offers at companies I was really excited
+											about. During my interviews, both companies were pleasantly surprised by how
+											knowledgeable and capable a bootcamp grad could be. Truly, I owe it all to
+											DevPioneer Institute's education and preparation.
+										</p>
+										<div class="mt-6">
+											<p>Benny Jetts</p>
+											<p>Front-end Engineer</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
 						<div class="py-16">
-							<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">FAQs</h2>
+							<div class="space-y-6">
+								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">FAQs</h2>
+								<ul class="space-y-6">
+									<li class="border border-gray-200 shadow grid">
+										<button type="button" class="px-6 py-4 grid">
+											<div class="grid grid-cols-[1fr_auto]">
+												<span class="text-left">Open this</span>
+												<span>+</span>
+											</div>
+										</button>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
