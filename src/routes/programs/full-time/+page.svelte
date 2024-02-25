@@ -1,7 +1,9 @@
 <script lang="ts">
+	import Accordion from '$lib/components/Accordion.svelte';
 	import LogoCloud from '$lib/components/LogoCloud.svelte';
 	import ProgramStats from '$lib/components/ProgramStats.svelte';
 	import ProgramsHeader from '$lib/components/ProgramsHeader.svelte';
+	import { onMount } from 'svelte';
 	const program = {
 		title: 'Full-time Program',
 		subtitle: 'For brave pioneers looking for an intense and immersive experience.',
@@ -70,6 +72,74 @@
 			]
 		}
 	];
+
+	let questions = [
+		{
+			id: 1,
+			question: 'Can I really become a developer in 15 weeks?',
+			answer:
+				'Absolutely! With our scientifically* proven curriculum and our hands-on mentallity the DevPioneer Institute experience will get you job-ready in little as 15 weeks. The full-time program is intense. It is meant to get you up to speed with industry standards in as little time possible.'
+		},
+		{
+			id: 2,
+			question: 'Why should I pursue an education at DevPioneer Institute?',
+			answer:
+				'As a trusted tech educator we have helped around one hundred brave pioneers graduate job-ready with the skills, persistence, and portfolio to build lasting careers in the tech industry and beyond.'
+		},
+		{
+			id: 3,
+			question:
+				'Will I need to purchase a computer for this program or will one be provided for me?',
+			answer:
+				'A computer is required to complete the program. DevPioneer Institute will NOT provide one for you.'
+		},
+		{
+			id: 4,
+			question: 'Are there any minimum requirements to apply to the program?',
+			answer:
+				'DevPioneer Institute welcomes all pioneer prospects to apply. Due to higher education regulations all future pioneers must be 18 years or older and must provide a copy of at least a high school diploma or equivalent.'
+		},
+		{
+			id: 5,
+			question: 'Why does DevPioneer Institute choose to teach the program in JavaScript?',
+			answer:
+				'The future of web development is always evolving. Web sites have become more sophisticated over the years and in order to stay current with development trends, DevPioneer Institute has come to the conclusion JavaScript is the language with the most growth opportunity.'
+		},
+		{
+			id: 6,
+			question: 'What types of careers will this program prepare me for?',
+			answer:
+				'Upon completion of the program graduates will be able to seek employment as Software Developers, Front-end Developers, Full Stack Engineers, and many more tech related fields. '
+		}
+	];
+
+	onMount(() => {
+		const sections = document.querySelectorAll('div[data-scroll-spy]');
+		const links = document.querySelectorAll("ul[role='navigation'] li");
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				for (const entry of entries) {
+					if (entry.isIntersecting) {
+						//console.log((entry.target as HTMLElement).dataset.scrollSpy);
+						const link = document.querySelector(
+							`a[href='#${(entry.target as HTMLElement).dataset.scrollSpy}']`
+						);
+						links.forEach((el) => (el.className = 'grid'));
+						//console.log(link?.parentElement);
+						if (link?.parentElement) {
+							link.parentElement.className += ' border-s-4 border-s-indigo-700 bg-gray-100';
+						}
+					}
+				}
+			},
+			{ rootMargin: '-10% 0px -90%' }
+		);
+
+		for (const section of sections) {
+			observer.observe(section);
+		}
+	});
 </script>
 
 <main>
@@ -82,52 +152,55 @@
 					<div class="relative hidden lg:block col-span-3">
 						<aside class="top-[10%] sticky">
 							<h2 class="text-sm font-medium mb-3 text-indigo-700">Blaze Your Trail</h2>
-							<nav class="bg-white border border-gray-200 rounded-lg">
-								<ul role="navigation" class="divide-y-2 border-b-2 border-inherit divide-inherit">
-									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal">Overview</a>
-									</li>
-									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal"
+							<nav class="bg-white border rounded-lg overflow-hidden">
+								<ul role="navigation" class="divide-y-2 border-b-2">
+									<li class="grid border-s-4 border-s-indigo-700 bg-gray-100">
+										<a href="#dpiexperience" class=" inline-block px-6 py-3 text-base font-normal"
 											>DevPioneer Institute Experience</a
 										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal"
+										<a href="#trail" class=" inline-block px-6 py-3 text-base font-normal"
 											>Learning Trail</a
 										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal">Tuition</a>
+										<a href="#tuition" class=" inline-block px-6 py-3 text-base font-normal"
+											>Tuition</a
+										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal"
+										<a href="#projects" class=" inline-block px-6 py-3 text-base font-normal"
 											>Hands-on Projects</a
 										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal">Schedule</a>
+										<a href="#schedule" class=" inline-block px-6 py-3 text-base font-normal"
+											>Schedule</a
+										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal"
+										<a href="#pairprogram" class=" inline-block px-6 py-3 text-base font-normal"
 											>Pair Programming</a
 										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal"
+										<a href="#placement" class=" inline-block px-6 py-3 text-base font-normal"
 											>Job Placement</a
 										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal">Admissions</a>
+										<a href="#admissions" class=" inline-block px-6 py-3 text-base font-normal"
+											>Admissions</a
+										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal"
+										<a href="#testimonials" class=" inline-block px-6 py-3 text-base font-normal"
 											>Testimonials</a
 										>
 									</li>
 									<li class="grid">
-										<a href="#" class=" inline-block px-6 py-3 text-base font-normal">FAQs</a>
+										<a href="#faqs" class=" inline-block px-6 py-3 text-base font-normal">FAQs</a>
 									</li>
 								</ul>
 								<div class="py-4 px-6 grid">
@@ -141,154 +214,151 @@
 						</aside>
 					</div>
 					<div class="col-span-12 lg:col-span-8 lg:col-start-5">
-						<h2 class="max-w-3xl text-3xl sm:text-4xl font-extrabold text-indigo-700">
-							The DevPioneer Institute Experience
-						</h2>
-						<p class="max-w-3xl text-base mt-6">
-							DevPioneer Institutes full-time program is an immersive and rigorous 15 week hands-on
-							course. For those brave pioneers seeking a rewarding career quickly.
-						</p>
-
-						<div class="mt-6 pb-12 sm:pb-24">
-							<p class="max-w-3xl text-xl sm:text-2xl font-extrabold text-gray-900">
-								The Full-time program highlights
+						<div id="dpiexperience" data-scroll-spy="dpiexperience" class="pb-16">
+							<h2 class="max-w-3xl text-3xl sm:text-4xl font-extrabold text-indigo-700">
+								The DevPioneer Institute Experience
+							</h2>
+							<p class="max-w-3xl text-base mt-6">
+								DevPioneer Institutes full-time program is an immersive and rigorous 15 week
+								hands-on course. For those brave pioneers seeking a rewarding career quickly.
 							</p>
-							<div class="mt-6 grid grid-cols-2 gap-6 items-start">
-								<div class="grid col-span-2 lg:col-span-1 space-y-2">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="w-6 h-6"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
-										/>
-									</svg>
-									<h3 class="text-lg font-medium">Top rated full-time program</h3>
-									<p class="text-base text-gray-500">
-										DevPioneer Institute is a top rated coding program and our students and alumni
-										show this.
-									</p>
-								</div>
-								<div class="grid col-span-2 lg:col-span-1 space-y-2">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="w-6 h-6"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-										/>
-									</svg>
-
-									<h3 class="text-lg font-medium">Dedicated teachers and staff</h3>
-									<p class="text-base text-gray-500">
-										Get hired with the support of our industry professionals. Designed to optimize
-										your interpersonal skills and build an ideal web developer career for you.
-									</p>
-								</div>
-								<div class="grid col-span-2 lg:col-span-1 space-y-2">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="w-6 h-6"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
-										/>
-									</svg>
-
-									<h3 class="text-lg font-medium">Experienced Instructors</h3>
-									<p class="text-base text-gray-500">
-										Our instructors are experienced industry professionals with a passion for
-										programming. Having worked for Fortune 500 companies to glorified start-ups
-										they've seen it all.
-									</p>
-								</div>
-								<div class="grid col-span-2 lg:col-span-1 space-y-2">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="w-6 h-6"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12"
-										/>
-									</svg>
-
-									<h3 class="text-lg font-medium">In demand Curriculum</h3>
-									<p class="text-base text-gray-500">
-										Job ready when you graduate. Our immersive curriculum will get you ready for the
-										jobs of today and tomorrow.
-									</p>
-								</div>
-								<div class="grid col-span-2 lg:col-span-1 space-y-2">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="w-6 h-6"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
-										/>
-									</svg>
-
-									<h3 class="text-lg font-medium">Modern Coding Tools</h3>
-									<p class="text-base text-gray-500">
-										Use popular developer tools like Visual Studio Code, Git, and Chrome Dev Tools.
-									</p>
-								</div>
-								<div class="grid col-span-2 lg:col-span-1 space-y-2">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="w-6 h-6"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
-										/>
-									</svg>
-
-									<h3 class="text-lg font-medium">Culture of Collaboration</h3>
-									<p class="text-base text-gray-500">
-										Work with other pioneers to improve your code through code reviews and learn how
-										to present it at the same time.
-									</p>
+							<div class="mt-6">
+								<p class="max-w-3xl text-xl sm:text-2xl font-extrabold text-gray-900">
+									The Full-time program highlights
+								</p>
+								<div class="mt-6 grid grid-cols-2 gap-6 items-start">
+									<div class="grid col-span-2 lg:col-span-1 space-y-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+											/>
+										</svg>
+										<h3 class="text-lg font-medium">Top rated full-time program</h3>
+										<p class="text-base text-gray-500">
+											DevPioneer Institute is a top rated coding program and our students and alumni
+											show this.
+										</p>
+									</div>
+									<div class="grid col-span-2 lg:col-span-1 space-y-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+											/>
+										</svg>
+										<h3 class="text-lg font-medium">Dedicated teachers and staff</h3>
+										<p class="text-base text-gray-500">
+											Get hired with the support of our industry professionals. Designed to optimize
+											your interpersonal skills and build an ideal web developer career for you.
+										</p>
+									</div>
+									<div class="grid col-span-2 lg:col-span-1 space-y-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+											/>
+										</svg>
+										<h3 class="text-lg font-medium">Experienced Instructors</h3>
+										<p class="text-base text-gray-500">
+											Our instructors are experienced industry professionals with a passion for
+											programming. Having worked for Fortune 500 companies to glorified start-ups
+											they've seen it all.
+										</p>
+									</div>
+									<div class="grid col-span-2 lg:col-span-1 space-y-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12"
+											/>
+										</svg>
+										<h3 class="text-lg font-medium">In demand Curriculum</h3>
+										<p class="text-base text-gray-500">
+											Job ready when you graduate. Our immersive curriculum will get you ready for
+											the jobs of today and tomorrow.
+										</p>
+									</div>
+									<div class="grid col-span-2 lg:col-span-1 space-y-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
+											/>
+										</svg>
+										<h3 class="text-lg font-medium">Modern Coding Tools</h3>
+										<p class="text-base text-gray-500">
+											Use popular developer tools like Visual Studio Code, Git, and Chrome Dev
+											Tools.
+										</p>
+									</div>
+									<div class="grid col-span-2 lg:col-span-1 space-y-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-6 h-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+											/>
+										</svg>
+										<h3 class="text-lg font-medium">Culture of Collaboration</h3>
+										<p class="text-base text-gray-500">
+											Work with other pioneers to improve your code through code reviews and learn
+											how to present it at the same time.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="trail" data-scroll-spy="trail">
 							<div class="space-y-6">
 								<h2 class="max-w-3xl text-3xl sm:text-4xl text-indigo-700 font-extrabold">
 									Blaze your trail
@@ -425,7 +495,7 @@
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="tuition" data-scroll-spy="tuition">
 							<div class="space-y-6">
 								<h2 class="max-w-3xl text-3xl sm:text-4xl text-indigo-700 font-extrabold">
 									Tuition
@@ -473,7 +543,7 @@
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="projects" data-scroll-spy="projects">
 							<div class="space-y-6">
 								<h2 class="max-w-3xl text-3xl sm:text-4xl text-indigo-700 font-extrabold">
 									Hands-on Projects
@@ -786,7 +856,7 @@
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="schedule" data-scroll-spy="schedule">
 							<div class="space-y-6">
 								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Daily Schedule</h2>
 								<p class="text-lg">
@@ -887,7 +957,7 @@
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="pairprogram" data-scroll-spy="pairprogram">
 							<div class="space-y-6">
 								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">
 									Programming Together
@@ -914,7 +984,7 @@
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="placement" data-scroll-spy="placement">
 							<div class="space-y-6">
 								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Job Placement</h2>
 								<p>
@@ -1022,7 +1092,7 @@
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="admissions" data-scroll-spy="admissions">
 							<div class="space-y-6">
 								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Admissions</h2>
 								<p>
@@ -1105,7 +1175,7 @@
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="testimonials" data-scroll-spy="testimonials">
 							<div class="space-y-6">
 								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">Testimonials</h2>
 								<div class="grid grid-cols-12 gap-x-4 gap-y-8 lg:gap-6">
@@ -1169,18 +1239,13 @@
 							</div>
 						</div>
 						<hr class="border-0 h-px bg-gray-200 my-6" />
-						<div class="py-16">
+						<div class="py-16" id="faqs" data-scroll-spy="faqs">
 							<div class="space-y-6">
 								<h2 class="text-3xl sm:text-4xl text-indigo-700 font-extrabold">FAQs</h2>
 								<ul class="space-y-6">
-									<li class="border border-gray-200 shadow grid">
-										<button type="button" class="px-6 py-4 grid">
-											<div class="grid grid-cols-[1fr_auto]">
-												<span class="text-left">Open this</span>
-												<span>+</span>
-											</div>
-										</button>
-									</li>
+									{#each questions as { question, answer }}
+										<Accordion {question} {answer} />
+									{/each}
 								</ul>
 							</div>
 						</div>

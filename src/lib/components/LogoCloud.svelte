@@ -15,7 +15,7 @@
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="w-12 h-12"
+						class="w-12 h-12 flex-shrink-0"
 					>
 						<path
 							stroke-linecap="round"
@@ -39,7 +39,7 @@
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="w-12 h-12"
+						class="w-12 h-12 flex-shrink-0"
 					>
 						<path
 							stroke-linecap="round"
@@ -53,14 +53,14 @@
 			</div>
 			<div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
 				<div class="flex items-center h-12 text-gray-400">
-					<span class="text-xl pointer-events-none select-none">We Fix Stuff</span>
+					<span class="text-xl pointer-events-none select-none leading-none">We Fix Stuff</span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="w-12 h-12"
+						class="w-12 h-12 flex-shrink-0"
 					>
 						<path
 							stroke-linecap="round"
@@ -78,7 +78,7 @@
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="w-12 h-12"
+						class="w-12 h-12 flex-shrink-0"
 					>
 						<path
 							stroke-linecap="round"
@@ -103,7 +103,7 @@
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="w-12 h-12"
+						class="w-12 h-12 flex-shrink-0"
 					>
 						<path
 							stroke-linecap="round"
