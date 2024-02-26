@@ -75,9 +75,9 @@
 	let questions = [
 		{
 			id: 1,
-			question: 'Can I really become a developer in 30 weeks?',
+			question: 'Can I really become a developer on my own?',
 			answer:
-				'Absolutely! With our scientifically* proven curriculum and our hands-on mentality the DevPioneer Institute experience will get you job-ready in little as 30 weeks. The part-time program is immersive. It is meant to get you up to speed with industry standards while you work your current job.'
+				'Absolutely! With our scientifically* proven curriculum and our hands-on mentality the DevPioneer Institute experience will get you job-ready. The online program is the same immersive program we teach in our part-time and full-time programs. It is meant to get you up to speed with industry standards at your own pace.'
 		},
 		{
 			id: 2,
@@ -361,8 +361,40 @@
 										</div>
 										<div class="p-6 space-y-2">
 											<p class="text-2xl font-semibold">Part-time Program</p>
-											<p>30 weeks</p>
-											<p>Learn while you work</p>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+													/>
+												</svg>
+												<p>30 weeks</p>
+											</div>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+													/>
+												</svg>
+												<p>Learn while you work</p>
+											</div>
 										</div>
 										<div class="grid border-t border-gray-200 text-center p-6">
 											<a
@@ -384,8 +416,40 @@
 										</div>
 										<div class="p-6 space-y-2">
 											<p class="text-2xl font-semibold">Full-time Program</p>
-											<p>15 weeks</p>
-											<p>Learn at a rigorous pace</p>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+													/>
+												</svg>
+												<p>15 weeks</p>
+											</div>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+													/>
+												</svg>
+												<p>Learn at a rigorous pace</p>
+											</div>
 										</div>
 										<div class="grid border-t border-gray-200 text-center p-6">
 											<a
@@ -1002,7 +1066,7 @@
 								</p>
 								<div class="mt-6 grid grid-cols-2 gap-x-4 gap-y-8 lg:gap-6">
 									<div
-										class="sm:col-span-1 col-span-2 border border-gray-200 rounded-lg overflow-hidden group transition-shadow hover:shadow-lg grid"
+										class="sm:col-span-1 col-span-2 border border-gray-200 rounded-lg overflow-hidden group transition-shadow hover:shadow-lg grid grid-rows-[auto_1fr_auto]"
 									>
 										<div class="h-40 overflow-hidden">
 											<img
@@ -1013,9 +1077,57 @@
 										</div>
 										<div class="p-6 space-y-2">
 											<p class="text-2xl font-semibold">Part-time Program</p>
-											<p>Code Review</p>
-											<p>Pair programming</p>
-											<p>Interview Prep</p>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6 text-green-500"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="m4.5 12.75 6 6 9-13.5"
+													/>
+												</svg>
+												<p>Code Review</p>
+											</div>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6 text-green-500"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="m4.5 12.75 6 6 9-13.5"
+													/>
+												</svg>
+												<p>Pair programming</p>
+											</div>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6 text-green-500"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="m4.5 12.75 6 6 9-13.5"
+													/>
+												</svg>
+												<p>Interview Prep</p>
+											</div>
 										</div>
 										<div class="grid border-t border-gray-200 text-center p-6">
 											<a
@@ -1037,9 +1149,57 @@
 										</div>
 										<div class="p-6 space-y-2">
 											<p class="text-2xl font-semibold">Full-time Program</p>
-											<p>Interview Prep</p>
-											<p>Job Placement</p>
-											<p>One-on-one Mentorship</p>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6 text-green-500"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="m4.5 12.75 6 6 9-13.5"
+													/>
+												</svg>
+												<p>Interview Prep</p>
+											</div>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6 text-green-500"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="m4.5 12.75 6 6 9-13.5"
+													/>
+												</svg>
+												<p>Job Placement</p>
+											</div>
+											<div class="flex items-center gap-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke-width="1.5"
+													stroke="currentColor"
+													class="w-6 h-6 text-green-500"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														d="m4.5 12.75 6 6 9-13.5"
+													/>
+												</svg>
+												<p>One-on-one Mentorship</p>
+											</div>
 										</div>
 										<div class="grid border-t border-gray-200 text-center p-6">
 											<a
