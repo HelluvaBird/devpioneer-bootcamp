@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Accordion from '$lib/components/Accordion.svelte';
-	import LogoCloud from '$lib/components/LogoCloud.svelte';
 	import ProgramStats from '$lib/components/ProgramStats.svelte';
 	import ProgramsHeader from '$lib/components/ProgramsHeader.svelte';
 	import { onMount } from 'svelte';
@@ -78,7 +77,7 @@
 			id: 1,
 			question: 'Can I really become a developer in 30 weeks?',
 			answer:
-				'Absolutely! With our scientifically* proven curriculum and our hands-on mentallity the DevPioneer Institute experience will get you job-ready in little as 30 weeks. The part-time program is immersive. It is meant to get you up to speed with industry standards while you work your current job.'
+				'Absolutely! With our scientifically* proven curriculum and our hands-on mentality the DevPioneer Institute experience will get you job-ready in little as 30 weeks. The part-time program is immersive. It is meant to get you up to speed with industry standards while you work your current job.'
 		},
 		{
 			id: 2,
@@ -1156,10 +1155,10 @@
 									help you on your journey. We want you to succeed with us at DevPioneer Institute.
 								</p>
 								<p>
-									The Full-time program is an intense and immersive journey. It was developed by our
-									top DevPioneer Institute scientists to challenge students throughout the program.
-									Blazing your trail with the Full-time program is an engaging and rewarding
-									experience.
+									The Part-time program is an immersive journey. It was developed by our top
+									DevPioneer Institute scientists to prepare you for a career in tech. Blazing your
+									trail with the Part-time program allows you to keep your current job while you
+									take evening classes.
 								</p>
 								<p>Prospective pioneers need to be:</p>
 								<div class="grid grid-cols-12 gap-6 items-start">
@@ -1179,9 +1178,7 @@
 											/>
 										</svg>
 										<p class="font-semibold">Commitment</p>
-										<p>
-											You need to be committed to learning the course material at a rigorous pace.
-										</p>
+										<p>You need to be committed to learning the course material after work.</p>
 									</div>
 									<div class="grid col-span-12 lg:col-span-4 gap-2">
 										<svg
