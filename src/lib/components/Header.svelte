@@ -113,7 +113,8 @@
 				</div>
 			</div>
 			<div class="sm:ml-10 space-x-4">
-				<a href="#" class="text-base font-medium text-gray-400 hover:text-gray-900">Sign in</a>
+				<a href="/signin" class="text-base font-medium text-gray-400 hover:text-gray-900">Sign in</a
+				>
 				<a
 					href="/admissions"
 					class="inline-block bg-indigo-600 text-white py-2 px-4 border border-transparent rounded-md text-base font-medium hover:bg-indigo-700/75"
