@@ -50,11 +50,11 @@
 						<button
 							on:click={() => (programsMenuOpen = !programsMenuOpen)}
 							type="button"
-							class="group inline-flex items-center text-base font-medium bg-white appearance-none border border-transparent rounded-sm text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+							class="group inline-flex items-center text-base font-medium bg-white appearance-none border border-transparent rounded-sm text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 						>
 							<span>Programs</span>
 							<svg
-								class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-900"
+								class="ml-2 h-5 w-5 group-hover:text-gray-900"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
 								fill="currentColor"
@@ -105,15 +105,17 @@
 							</div>
 						{/if}
 					</div>
-					<a href="/price" class="text-base font-medium text-gray-400 hover:text-gray-900">Price</a>
-					<a href="/admissions" class="text-base font-medium text-gray-400 hover:text-gray-900"
+					<a href="/price" class="text-base font-medium text-gray-500 hover:text-gray-900">Price</a>
+					<a href="/admissions" class="text-base font-medium text-gray-500 hover:text-gray-900"
 						>Admissions</a
 					>
-					<a href="#" class="text-base font-medium text-gray-400 hover:text-gray-900">Support</a>
+					<a href="/aboutus" class="text-base font-medium text-gray-500 hover:text-gray-900"
+						>About us</a
+					>
 				</div>
 			</div>
 			<div class="sm:ml-10 space-x-4">
-				<a href="/signin" class="text-base font-medium text-gray-400 hover:text-gray-900">Sign in</a
+				<a href="/signin" class="text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a
 				>
 				<a
 					href="/admissions"
@@ -128,11 +130,11 @@
 					on:click={() => (mobileMenuOpen = !mobileMenuOpen)}
 					on:focus={() => firstMobileLink.focus()}
 					type="button"
-					class="group inline-flex items-center text-base font-medium bg-white appearance-none border border-transparent rounded-sm text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+					class="group inline-flex items-center text-base font-medium bg-white appearance-none border border-transparent rounded-sm text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 				>
 					<span>Programs</span>
 					<svg
-						class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-900"
+						class="ml-2 h-5 w-5 group-hover:text-gray-900"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 20 20"
 						fill="currentColor"
@@ -146,11 +148,12 @@
 					</svg>
 				</button>
 			</div>
-			<a href="/price" class="text-base font-medium text-gray-400 hover:text-gray-900">Price</a>
-			<a href="/admissions" class="text-base font-medium text-gray-400 hover:text-gray-900"
+			<a href="/price" class="text-base font-medium text-gray-500 hover:text-gray-900">Price</a>
+			<a href="/admissions" class="text-base font-medium text-gray-500 hover:text-gray-900"
 				>Admissions</a
 			>
-			<a href="#" class="text-base font-medium text-gray-400 hover:text-gray-900">Support</a>
+			<a href="/aboutus" class="text-base font-medium text-gray-500 hover:text-gray-900">About us</a
+			>
 		</div>
 		<div
 			class="absolute inset-x-0 top-full bg-white z-10 grid lg:hidden grid-rows-[0fr] overflow-hidden transition-[grid-template-rows]"
